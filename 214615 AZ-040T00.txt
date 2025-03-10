@@ -26,6 +26,296 @@ https://rms.koenig-solutions.com/InterimFeedback.aspx?id=b2b2b6b9b5ba&frm=3
 
 DAY 1:----------------------------------------------------------------------------------------------------------------------
 
+Pre-Course Test
+
+PowerShell Gallery
+
+
+Module 01:---
+
+Windows PowerShell
+
+is the superseded version of Traditional Command Prompt.
+(cd, mkdir etc.)
+
+
+
+task automation & configuration management program.
+
+1. Command-line shell:
+ features:
+ 1) supports cmdlets & aliases
+ 2) tab completion & prediction
+ 3) support the built-in help
+ 4) command-line history
+ 5) chaining of cmdlet---pipeline
+
+e.g cmd1 | cmd2 | cmd3 ----single operation
+
+
+2. Scripting Language
+
+repetitive tasks and complex tasks-----> scripts
+
+3. Configuration management framework
+
+DSC(Desired State Configuration)---- IaC (Declarative syntax)---What
+
+method:
+i)push
+ii)pull
+
+
+Windows PowerShell vs PowerShell Core?
+
+x.x.x
+Windows PowerShell 
+PS1.0-PS5.1 ------> built on .NET framework -----> supported on Windows OS
+
+PowerShell Core
+PS6.0-PS7.5 -----> built on .NET Core ----->supported on cross platforms (Win, Linux, MacOS)
+
+
+PS Applications:---
+Windows:---
+1) Windows PowerShell app---by default
+2) Windows PowerShell ISE-- by default---GUI
+3) PowerShell Core
+
+Linux:---
+1) PowerShell Core
+
+MacOS:---
+1) PowerShell Core
+
+
+update-help
+
+PS Extension:
+1. script file---- .ps1
+2. module file---- .psm1
+3. console file--- .psc1
+
+PS--- English-like language
+
+Syntax:::--
+
+1) verb-noun 
+
+2) verb-noun -parameter value -parameter value
+
+3) verb-noun -parameter value1, value2
+
+4)  verb-noun -parameter
+
+verb:--- action
+display/fetch--->get, create--->new, modify---set, delete---remove
+
+noun:--- name   (singular)
+
+parameter:--- modify the action of cmdlet
+
+value:--- pass to the parameter
+
+
+Types of Parameters:----
+1. Mandatory---required ones, whenever the complete parameter set is not in the [] bracket
+2. Optional--- not required ones, whenever the complete parameter set is in the [] bracket
+3. Positional--- whenever the name of the parameter is in the [] bracket, omit the name of the parameter
+4. Named--- whenever the name of the parameter is not in  the [] bracket
+
+
+e.g
+get-xyz [[-Name] <System.String[]>] ----> optional, positional
+
+get-xyz [-Name <System.String[]>] ----> optional, named
+
+get-xyz [-Name] <System.String[]>  ----> mandatory, positional
+
+get-xyz -Name <System.String[]>    -----> mandatory, named
+
+
+
+Using cmdlets to explore PS:---
+
+1. get-module:---- modules which are available PS session
+
+get-module -listavaliable
+
+install-module -name az
+
+update-module -name az
+
+PS1.0-2.0:---load them manually in to the PowerShell
+
+import-module -name .......
+
+PS3.0:--- Autoloading
+
+
+2. get-alias
+3. get-verb:  group of actions
+4. get-command
+alias, functions, cmdlets
+
+i) get-command -verb .............
+
+ii) get-command -noun .......... or  *......*
+
+iii) get-command -verb ........ -noun ........
+
+iv) get-command -module ........
+
+
+task : display the list of all services.
+
+display----- get
+noun----- service
+
+
+
+5. get-help
+
+get-help cmdlet-name
+
+get-help cmdlet-name -detailed
+
+get-help cmdlet-name -full
+
+get-help cmdlet-name -examples
+
+get-help cmdlet-name -online
+
+get-help cmdlet-name -showwindow
+
+
+about file :----
+
+get-help about_*
+
+6. get-member(gm): discover what is the object class type, properties, methods are available for any cmdlet.
+
+input and output----- .NET object
+
+Object---
+
+e.g Car
+
+Attribute/Properties: Name, Color, Brand, Model
+Behaviors/Methods: speed(), brake(), start(), stop()
+
+collection of similar objects------------ class
+
+
+syntax: cmdlet-name  | get-member
+
+
+Control the output format:----
+
+1. Format-table (ft)
+
+cmdlet | ft
+
+2. format-list (fl)
+
+cmdlet | fl
+
+
+two ways:
+
+(cmdlet).property
+
+(cmdlet).method()
+
+or 
+
+$var =  cmdlet
+$var.property
+
+$var =  cmdlet
+$var.method()
+
+
+
+1. search the native cmdlet
+2. explore properties/methods----- get-member
+
+
+
+ADDS administration in PS:----------
+
+objects
+
+resources or security principals
+
+by name & attributes
+
+
+Module:--- activedirectory
+
+
+noun----- ad as the prefix
+
+e.g aduser , adgroup
+
+server Administration:
+
+Module : servermanager
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
