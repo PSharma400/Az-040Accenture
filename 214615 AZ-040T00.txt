@@ -1,0 +1,40 @@
+214615: AZ-040T00: Automating Administration with PowerShell
+
+Day1 Attendance Link:
+https://rms.koenig-solutions.com/MarkAssignmentAttendance.aspx?AId=214615&Opid=933037 
+Use Your Corporate E-mail Address
+Trainer Name: Pooja Sharma
+
+
+Achievement URL:
+ https://learn.microsoft.com/en-us/users/me/achievements?WT.mc_id=ilt_partner_webpage_wwl&ocid=508978&redeem=MRD7Y3
+
+LET Portal(Student Portal) Login: Training details are available on this portal (Meeting Links, Recording Links, Reference Links, Qubits etc.)
+      Link:----- https://www.mykoenig.com/
+      Credentials Details:---- Email ID: Your Corporate Email ID, Password: 214615
+
+Lab Link:-----https://koenig-solutions.learnondemand.net
+    Email ID: Login using your Corporate Email ID
+    Click on Register with training key (Event Training Key:0C6B4D2FE6C64AF7)
+      Important: Make sure you Redeem Lab training key within these training days, once training  completes, lab key will expire and you will not be able to access labs.
+
+Event Training Key: 0C6B4D2FE6C64AF7
+
+IF Link:
+https://rms.koenig-solutions.com/InterimFeedback.aspx?id=b2b2b6b9b5ba&frm=3
+
+
+DAY 1:----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
