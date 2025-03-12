@@ -264,6 +264,1007 @@ Module : servermanager
 
 
 
+DAY 2:-----------------------------------------------------------------------------------------------------------------------
+
+
+Day2 Attendance Link:
+https://rms.koenig-solutions.com/MarkAssignmentAttendance.aspx?AId=214615&Opid=933038 
+Use Your Corporate E-mail Address
+Trainer Name: Pooja Sharma
+
+
+QL: https://www.qubits42.com/live/45283
+
+
+
+N/w Administration:----
+
+Module: NetTCPIP
+
+noun:--- prefix net
+
+
+
+Pipeline:-------------
+
+chaining of cmdlets
+
+(|)--- pipe operator
+
+cmd1 | cmd2 | cmd3 -----> single operation
+
+processing--- uni-directional (left to right)
+
+
+Pass pipeline objects:---
+
+accept pipeline input? 
+True
+i) by value
+ii) by propertyname
+iii) both
+
+False
+does not support
+
+
+
+*** Manipulate the objects in the pipeline:---
+i. measure-object (measure)
+
+cmdlet | measure
+
+by default----  count
+
+property:
+i) Numeric object
+
+max, min, sum, average
+
+ii) string object
+
+chars, words, line
+
+ii. sort-object (sort)--- sorting operations
+
+1. ascending
+2. descending
+
+cmdlet | sort-object -property ............ ------> ascending (by default)
+
+cmdlet | sort-object -property ............ -descending ------> descending 
+
+
+iii. select-object (select)
+
+particular objects from the collection.
+
+cmdlet | select-object -property ..........,.........,..........
+
+
+parameters: -first, -last, -unique
+
+
+
+*** Filter the objects
+
+1. Basic Filter syntax
+
+Where-object(where or ?):---- select objects from the collection based on their property values
+
+cmdlet | where condition
+
+cmdlet | where condition | where condition
+
+Limitations:---
+
+1. support the single operation
+2. does not support the property dereferencing
+
+2. Advance Filter syntax
+
+where-object
+
+Benefits:
+1. support the multiple operation (-and, -or)
+2.  support the property dereferencing
+
+cmdlet | where -filterscript {$_ or $Psitem condition}
+
+
+conditions / comparisons
+
+True---- kept
+False ---- Remove
+
+
+Comparison Operators:---
+
+1. equals to       =              -eq
+2.not equals to    !=             -ne
+3. less than       <               -lt
+4. greater than    >               -gt
+5. l t or e to     <=               -le
+6. g t or e to     >=               -ge
+7. pattern matching  like           -like
+
+string object---- are not case sensitive (by default)
+
+case-sensitive:--- add the letter c in the beginning of the operator e.g -ceq
+
+
+Time complexity
+space complexity (less LoC)
+
+
+*** Enumerate the objects:----
+
+process--- performing tasks ---- on each object----one at time ---in a collection
+
+foreach-object (foreach or %)
+
+
+
+
+**** Pipeline Conversion or send & pass the data as o/p from the pipeline
+
+1. Text (.txt)
+
+cmdlet | out-file -path ...........
+
+2. CSV (.csv)
+
+i) convertto-csv
+
+ii) export-csv
+
+3. XML (.xml)--- Extensible Markup Language
+
+Tags:
+
+i) container/ padded   <tag>.....</tags>
+ii) empty/non-padded   <tag>
+
+
+export-clixml
+
+
+4. JSON (.json)--- Java Script Object Notation
+
+lightweight
+
+store:---- name:value pair
+
+convertto-json
+
+5. HTML (.html)---- Hyper Text Markup Language--- browser-based output
+
+<HTML>
+....
+....
+</HTML>
+
+convertto-html
+
+out-file 
+redirection operator (>)
+
+
+
+6. out-printer
+
+7. out-gridview
+review, filter, analysis, sort the o/p
+
+
+**** WMI & CIM
+
+WMI:--- Windows Management Instrumentation
+
+CIM:--- Common Information Model
+
+
+both are related technologies
+
+local/ remote computer
+
+
+connect to common information repo(data store/ root) of local/ remote computer.
+
+
+mgmt. information (WMI Repository )---- h/w, s/w, h/w drivers, services, roles, features, components, user settings.
+
+
+operations:----
+1. Query the data
+2. Manipulations (make changes)
+
+
+
+WMI:--- DMTF standard
+
+WBEM(Web Based Enterprise Management)----- supported on Windows OS
+
+
+CIM:--- open standard ---- supported on cross platform (Win, Linux, MacOS)
+
+
+
+CIM Cmdlets:
+
+protocols:---connections
+i. COM---- local comm.
+ii. DCOM---- remote comm.--- dynamic ports
+iii. WSMAN---- remote comm. --- 2 ports
+  5985(WSMAN Listener)---- HTTP (by default)
+  5986(Secure Listener)--- HTTPS
+
+
+three types of connections:
+
+1. Local connection: access the local computer resources
+
+2. Ad-hoc connection: access the remote computer resources 
+
+3. CIM session: access the remote computer resources 
+
+ 
+
+
+WMI Cmdlets:
+
+protocols:---connections
+i. COM---- local comm.
+ii. DCOM---- remote comm.--- dynamic ports
+
+two types of connections:
+
+1. Local connection: access the local computer resources
+
+2. Ad-hoc connection: access the remote computer resources 
+
+
+session based connectivity is not possible with WMI.
+
+
+CIM Vs WMI
+
+
+
+
+***** Filter instance 
+
+
+-filter parameter
+
+
+
+Comparison Operators:---
+                 WMI/CIM           PS Operators
+1. equals to       =              -eq
+2.not equals to    !=             -ne
+3. less than       <               -lt
+4. greater than    >               -gt
+5. l t or e to     <=               -le
+6. g t or e to     >=               -ge
+7. pattern matching  like           -like
+
+
+WQL(WMI Query Language):---- CIM/ WMI
+
+-query parameter
+
+classes
+
+query:--- select * from classname
+
+select * from classname where condition 
+
+
+
+
+SQL
+
+tables
+
+query:--- select * from tablename
+
+select * from tablename where condition 
+
+
+
+DAY 3:-----------------------------------------------------------------------------------------------------------------------
+
+
+Day3 Attendance Link:
+https://rms.koenig-solutions.com/MarkAssignmentAttendance.aspx?AId=214615&Opid=933039
+Use Your Corporate E-mail Address
+Trainer Name: Pooja Sharma
+
+
+QL: https://www.qubits42.com/live/45283
+
+
+FF Link:
+https://rms.koenig-solutions.com/Feedback/FinalFeedback.aspx?d=avA27wrTaeLIUZD55F4MSpuVwAqexewOJkEjOLA/KSc=
+
+MTM Survey:
+https://www.metricsthatmatter.com/url/u.aspx?47F5CB6B4220023551
+
+Post Course Test
+
+
+
+Module 6:-----
+
+Background Job
+
+regain the access to the PS prompt immediately
+
+i) Local jobs
+
+e.g LON-CL1--- access the local computer resources
+
+start-job -scriptblock {cmdlet} -name .............
+
+ii) Remote jobs
+
+e.g LON-CL1----- LON-DC1--- access the remote computer resources
+
+invoke-command -scriptblock { cmdlet } -computername ..........,........,........... -asjob -jobname ........
+
+iii)CIM/WMI jobs
+
+local as well as remote computer
+
+CIM Jobs:--- start-job -scriptblock { CIM Cmdlet }
+
+WMI Jobs:--- get-wmiobject -class ................ -asjob
+
+
+
+*****Scheduled Job
+
+win PS background jobs + win task schedular tasks
+
+
+1. advance options
+2. triggers
+3. register the jobs
+
+
+*** PowerShell Scripting
+
+scripting is all about automation.
+
+repetitive tasks or complex tasks or bulk operations
+
+
+process of writing the set of steps/statements in PS language & store them in a text file with .ps1 extension.
+
+
+Benefits:-----
+1. save time
+2. save cost
+3. increase in productivity
+4. consistency 
+5. improved efficiency
+6. error less
+7. support cross platform
+8. reusability
+9. customization
+10. scalability
+11. security
+
+
+
+Components:----
+1. Module
+2. cmdlets
+3. variables
+4. arrays
+5. arraylist
+6. hash table
+7. scripting constructs (flow control, looping, jumping)
+8. parameters
+9. error & error handling
+10. sign a script
+
+
+
+Variables:----------
+
+store the diff types of values in PS.
+
+values:--- int, string, char, double, Boolean
+
+
+two types :
+
+1. built-in variable:
+created by the PS team.
+
+i) automatic variables-- store the state of the PS.
+
+e.g. $psversiontable, $pshome
+
+ii) preference variables--- store the user preferences  for PS.
+populated with the default values
+
+
+2. user-defined variable
+created & maintained by user.
+
+
+
+Arrays:------------- by default, fixed in nature
+
+Data structure
+
+homogeneous elements
+
+
+multiple values
+
+store---- on the basis of index no.
+
+e.g 5 items
+
+12   34   67    78   90
+[0]  [1]  [2]   [3]  [4]
+
+access--- on the basis of index no.
+
+
+*** Arraylists:--- DS
+
+multiple values
+
+store & access the items---- on the basis of index no.
+
+dynamic in nature.
+
+methods:
+
+1. add()
+2. remove()
+3. removeat()
+
+
+[system.collections.arraylist]$al = ...........,.............,...............
+
+
+
+
+
+*****hash table / Associative arrays / Dictionary
+
+Data structure
+
+similar concept like as an array
+
+store:---- Name/key - value pair
+
+
+key--string
+unique (no two duplicate keys are allowed in the Hash table)
+
+e.g. computername - ipaddress or vice-versa
+
+ empname - email address
+
+
+Create a HT:---
+1. start with @ sign
+2. enclose in {} braces
+3. = sign to separate each key from its value
+4. ; line break to separate the key-value pair
+
+
+syntax:---
+@{key=value; key1=value; key2=value}
+
+$ht = @{key=value; key1=value; key2=value}
+$ht
+
+operations:
+1. add()
+2. remove()
+3. removeat()
+
+
+Two types of HT:---
+1. Unordered Hash Table--- by default
+
+@{key=value; key1=value; key2=value}
+
+
+2. Ordered Hash Table ---PS3.0
+
+[ordered]@{key=value; key1=value; key2=value}
+
+
+
+
+
+7. scripting constructs (flow control, looping, jumping)
+
+i. Flow control:
+
+1. If construct
+
+if(condition)---> true
+{
+//statement
+}
+
+2. If else
+
+if(condition)---> true
+{
+//statement
+}
+else
+{
+//statement
+}
+
+
+3. If else If
+
+if(condition)
+{
+//statement
+}
+elseif(condition)
+{
+//statement
+}
+else
+{
+//statement
+}
+
+
+4. switch
+
+switch(exp,exp)
+{
+case1: action
+case2: action
+.
+.
+casen: action
+default: action
+}
+
+
+
+ii. Looping (Loops)--- repetitive tasks
+
+1. while loop--- pre-condition check loop
+
+while(condition)
+{
+//statements
+}
+
+2. do while loop---- post-condition check loop
+
+do
+{
+//statements
+}
+while(condition)
+
+
+3. for loop
+
+for($initial_counter; condition; operation/update_counter)
+{
+//statement
+}
+
+infinite for
+
+for(;;)
+{
+//statement
+}
+
+
+4. foreach loop
+
+$a = ....,.........,.............,.............
+
+foreach ($var in $a)
+{
+//statement
+}
+
+
+iii. Jumping:
+
+1. break: stop the execution
+
+break
+
+2. continue: skip the execution
+
+continue
+
+
+*** Parameters:---- 
+
+param(......,..........)
+
+before the code
+
+
+*** sign a script
+
+
+Digital Signature:--- fingerprint
+
+ensure:-- authenticity & integrity
+
+
+Digital Certificate:---file
+
+Certificate Authority (CA)
+
+internal CA
+
+
+*** digitally PS script with code signing
+
+1. install the code signing certificate
+2. sign a script
+
+
+
+
+-filepath "C:\Scripts" -filter *.ps1
+
+-literalpath "C:\scripts\abc.ps1"
+
+C:\scripts\
+1. abc.ps1
+2.xyz.ps1
+3. def.ps1
+Saravanan.txt
+......csv
+
+
+Error Handling
+
+diff b/w actual & expected output
+
+Reasons:---
+1. typo error
+2. syntax error
+3.logical error
+4. query the object that does not exist   e.g. LON-CL2
+5. comm. with the m/c which is offline
+
+terminating errors
+
+Try-catch block
+
+try
+{
+//code
+}
+catch
+{
+//
+}
+
+non-terminating errors
+
+continue, ignore, stop, inquire
+
+
+
+write-host , write-output
+
+
+
+LET----------> Qubits------------> Post-Course Test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
